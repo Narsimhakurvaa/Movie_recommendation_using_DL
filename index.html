@@ -1,45 +1,198 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Movie Update App</title>
+  <meta charset="UTF-8" />
+  <title>Tollywood Movie Gallery</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 50px;
-      background-color: #f7f7f7;
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f1f1f1;
     }
-    h1 {
-      color: #2c3e50;
+    header {
+      background-color: #0f0f0f;
+      color: white;
+      padding: 20px;
+      font-size: 28px;
+      text-align: center;
+      font-weight: bold;
     }
-    pre {
-      background-color: #eee;
-      padding: 10px;
-      border-radius: 5px;
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 25px;
+      padding: 30px;
+    }
+    .movie-card {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s ease;
+    }
+    .movie-card:hover {
+      transform: scale(1.03);
+    }
+    .movie-poster img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+    }
+    .movie-title {
+      padding: 12px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 600;
+      color: #111;
+      background-color: #fafafa;
     }
   </style>
 </head>
 <body>
-  <h1>🎬 Movie Update App</h1>
-  <p>This is a simple Python-based application that processes movie data from a CSV file and performs updates.</p>
+  <header>🎬 Tollywood Movie Gallery</header>
+  <div class="gallery">
 
-  <h2>📁 Project Structure</h2>
-  <pre>
-updateapp1final.py     # Python logic
-data/movies3.csv       # Dataset
-README.md              # Project details
-.gitignore             # Ignored files
-index.html             # GitHub Pages entry point
-  </pre>
-
-  <h2>🚀 How to Run</h2>
-  <pre>
-pip install -r requirements.txt
-python updateapp1final.py
-  </pre>
-
-  <h2>📄 Description</h2>
-  <p>The Movie Update App reads movie details from a CSV file and performs defined update operations. It is built with simplicity and reusability in mind.</p>
+    <div class="movie-card">
+      <div class="movie-poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/d7/RRR_Poster.jpg" alt="RRR Poster">
+      </div>
+      <div class="movie-title">RRR</div>
+    </div>
+    
+    <div class="movie-card">
+      <div class="movie-poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/96/Pushpa_-_The_Rise_%282021_film%29.jpg" alt="Pushpa: The Rise Poster">
+      </div>
+      <div class="movie-title">Pushpa: The Rise</div>
+    </div>
+    
+    <div class="movie-card">
+      <div class="movie-poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/5d/Baahubali_The_Beginning_poster.jpg" alt="Baahubali: The Beginning Poster">
+      </div>
+      <div class="movie-title">Baahubali: The Beginning</div>
+    </div>
+    
+    <div class="movie-card">
+      <div class="movie-poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/f9/Baahubali_2_The_Conclusion_poster.jpg" alt="Baahubali: The Conclusion Poster">
+      </div>
+      <div class="movie-title">Baahubali: The Conclusion</div>
+    </div>
+    
+    <div class="movie-card">
+      <div class="movie-poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/f0/Ala_Vaikunthapurramuloo.jpg" alt="Ala Vaikunthapurramuloo Poster">
+      </div>
+      <div class="movie-title">Ala Vaikunthapurramuloo</div>
+    </div>
+    
+    <div class="movie-card">
+      <div class="movie-poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/6/65/Sarkaru_Vaari_Paata.jpg" alt="Sarkaru Vaari Paata Poster">
+      </div>
+      <div class="movie-title">Sarkaru Vaari Paata</div>
+    </div>
+    
+    <div class="movie-card">
+      <div class="movie-poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/b3/Sarileru_Neekevvaru_poster.jpg" alt="Sarileru Neekevvaru Poster">
+      </div>
+      <div class="movie-title">Sarileru Neekevvaru</div>
+    </div>
+    
+    <div class="movie-card">
+      <div class="movie-poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/3e/Maharshi_poster.jpg" alt="Maharshi Poster">
+      </div>
+      <div class="movie-title">Maharshi</div>
+    </div>
+    
+    <div class="movie-card">
+      <div class="movie-poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/8/88/Arjun_Reddy.jpg" alt="Arjun Reddy Poster">
+      </div>
+      <div class="movie-title">Arjun Reddy</div>
+    </div>
+    
+    <div class="movie-card">
+      <div class="movie-poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/3a/Geetha_Govindam.jpg" alt="Geetha Govindam Poster">
+      </div>
+      <div class="movie-title">Geetha Govindam</div>
+    </div>
+    
+    <div class="movie-card">
+      <div class="movie-poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/3b/Jersey_film_poster.jpg" alt="Jersey Poster">
+      </div>
+      <div class="movie-title">Jersey</div>
+    </div>
+    
+    <div class="movie-card">
+      <div class="movie-poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/7f/Duvvada_Jagannadham.jpg" alt="DJ: Duvvada Jagannadham Poster">
+      </div>
+      <div class="movie-title">DJ: Duvvada Jagannadham</div>
+    </div>
+    
+    <div class="movie-card">
+      <div class="movie-poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/26/Srimanthudu_poster.jpg" alt="Srimanthudu Poster">
+      </div>
+      <div class="movie-title">Srimanthudu</div>
+    </div>
+    
+    <div class="movie-card">
+      <div class="movie-poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/Eega_poster.jpg" alt="Eega Poster">
+      </div>
+      <div class="movie-title">Eega</div>
+    </div>
+    
+    <div class="movie-card">
+      <div class="movie-poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/f7/Gabbar_Singh_Poster.jpg" alt="Gabbar Singh Poster">
+      </div>
+      <div class="movie-title">Gabbar Singh</div>
+    </div>
+    
+    <div class="movie-card">
+      <div class="movie-poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Temper_movie.jpg" alt="Temper Poster">
+      </div>
+      <div class="movie-title">Temper</div>
+    </div>
+    
+    <div class="movie-card">
+      <div class="movie-poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/f7/Janatha_Garage_film_poster.jpg" alt="Janatha Garage Poster">
+      </div>
+      <div class="movie-title">Janatha Garage</div>
+    </div>
+    
+    <div class="movie-card">
+      <div class="movie-poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/00/Legend_movie.jpg" alt="Legend Poster">
+      </div>
+      <div class="movie-title">Legend</div>
+    </div>
+    
+    <div class="movie-card">
+      <div class="movie-poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/f1/Bharat_Ane_Nenu.jpg" alt="Bharat Ane Nenu Poster">
+      </div>
+      <div class="movie-title">Bharat Ane Nenu</div>
+    </div>
+    
+    <div class="movie-card">
+      <div class="movie-poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Magadheera.jpg" alt="Magadheera Poster">
+      </div>
+      <div class="movie-title">Magadheera</div>
+    </div>
+    
+  </div>
 </body>
 </html>
